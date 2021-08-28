@@ -195,6 +195,10 @@ namespace zcode.AssetBundlePacker
 
                         download_files.Add(name);
                     }
+                    else //wk210828 既然本地文件都不存在，肯定要下载
+                    {
+                        download_files.Add(name);
+                    }
                 }
             }
         }
